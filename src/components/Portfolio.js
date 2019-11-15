@@ -4,15 +4,15 @@ export default class Porfolio extends Component {
     let resumeData = this.props.resumeData;
     return (
       <section id="portfolio" >
-      <div className="row">
-        <div className="twelve columns collapsed" >
+      <section className="row">
+        <section className="twelve columns collapsed" >
           <h1 style={{fontSize:"32px"}}>Projects</h1>
-          <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf" >
+          <section id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf" >
           <br />
           {
             resumeData.portfolio && resumeData.portfolio.map((item)=>{
               return(
-                <div style={{textAlign:"center"}}>
+                <section style={{textAlign:"center"}}>
                   
                   <h5 style={{textAlign:"center",fontSize:"32px"}}>{item.name}</h5>
                   <br />
@@ -35,13 +35,13 @@ export default class Porfolio extends Component {
                     <br />
                     <br />
                     <br />
-                </div>
+                </section>
               )
             })
           }
-          </div>
-        </div>
-      </div>
+          </section>
+        </section>
+      </section>
   </section>
         );
   }

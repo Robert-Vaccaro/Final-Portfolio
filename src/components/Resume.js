@@ -5,18 +5,18 @@ export default  class Resume extends Component {
     return (
       <section id="resume">
 
-         <div className="row education">
+         <section className="row education">
 
-            <div className="three columns header-col">
+            <section className="three columns header-col">
                <h1><span>Education</span></h1>
-            </div>
+            </section>
 
-            <div className="nine columns main-col">
+            <section className="nine columns main-col">
               {
                 resumeData.education && resumeData.education.map((item)=>{
                   return(
-                    <div className="row item" >
-                       <div className="twelve columns">
+                    <section className="row item" >
+                       <section className="twelve columns">
                           <h3>{item.UniversityName}</h3>
                           <p className="info">
                           {item.specialization}
@@ -24,24 +24,24 @@ export default  class Resume extends Component {
                           <p>
                           {item.Achievements}
                           </p>
-                       </div>
-                    </div>
+                       </section>
+                    </section>
                   )
                 })
               }
-            </div>
-         </div>
-        <div className="row work">
-            <div className="three columns header-col">
+            </section>
+         </section>
+        <section className="row work">
+            <section className="three columns header-col">
                <h1><span>Work</span></h1>
-            </div>
+            </section>
 
-            <div className="nine columns main-col">
+            <section className="nine columns main-col">
               {
                 resumeData.work && resumeData.work.map((item) => {
                   return(
-                    <div className="row item">
-                       <div className="twelve columns">
+                    <section className="row item">
+                       <section className="twelve columns">
                           <h3>{item.CompanyName}</h3>
                           <p className="info">
                           {item.specialization}
@@ -49,30 +49,30 @@ export default  class Resume extends Component {
                           <p>
                           {item.Achievements}
                           </p>
-                       </div>
+                       </section>
 
-                    </div>
+                    </section>
 
                   )
                 })
               }
-            </div> 
-         </div>
+            </section> 
+         </section>
 
 
-         <div className="row skill">
+         <section className="row skill">
 
-            <div className="three columns header-col">
+            <section className="three columns header-col">
                <h1><span>Skills</span></h1>
-            </div>
+            </section>
 
-            <div className="nine columns main-col">
+            <section className="nine columns main-col">
 
                <p>
                {resumeData.skillsDescription}
                </p>
 
-   				<div className="bars">
+   				<section className="bars">
 
    				   <ul className="skills">
                 {
@@ -88,11 +88,11 @@ export default  class Resume extends Component {
 
    					</ul>
 
-   				</div>
+   				</section>
 
-   			</div>
+   			</section>
 
-         </div>
+         </section>
 
       </section>
     );

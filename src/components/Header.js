@@ -18,8 +18,8 @@ export default class Header extends Component {
             </ul>
          </nav>
 
-         <div className="row banner">
-            <div className="banner-text">
+         <section className="row banner">
+            <section className="banner-text">
                <h1 className="responsive-headline">Hi, I'm {resumeData.name}!</h1>
                <h3 style={{color:'#fff', fontFamily:'sans-serif '}}>{resumeData.roleDescription}
                </h3>
@@ -36,8 +36,8 @@ export default class Header extends Component {
                     )
                   }
                </ul>
-            </div>
-         </div>
+            </section>
+         </section>
 
          <p className="scrolldown">
             <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>

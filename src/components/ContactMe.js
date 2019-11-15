@@ -4,13 +4,13 @@ export default class contactme extends Component {
     let resumeData = this.props.resumeData;
     return (
       <section id="contactme">
-        <div className="text-container">
-          <div className="row">
-            <div className="two columns header-col">
+        <section className="text-container">
+          <section className="row">
+            <section className="two columns header-col">
               <h1><span></span></h1>
-            </div>
-            <div className="ten columns flex-container">
-              <div className="flexslider">
+            </section>
+            <section className="ten columns flex-container">
+              <section className="flexslider">
                 <ul className="slides">
                   {
                     resumeData.contactme && resumeData.contactme.map((item)=>{
@@ -29,10 +29,10 @@ export default class contactme extends Component {
                     })
                   }
                 </ul>
-              </div> {/* div.flexslider ends */}
-            </div> {/* div.flex-container ends */}
-          </div> {/* row ends */}
-        </div>  {/* text-container ends */}
+              </section> {/* section.flexslider ends */}
+            </section> {/* section.flex-container ends */}
+          </section> {/* row ends */}
+        </section>  {/* text-container ends */}
       </section>
         );
   }
