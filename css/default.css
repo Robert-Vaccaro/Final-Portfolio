@@ -26,7 +26,7 @@ time, mark, audio, video {
    background: transparent;
 }
 .for-semantics-checker{
-   visibility: hidden;
+   display: none;
 }
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
