@@ -25,7 +25,9 @@ time, mark, audio, video {
    vertical-align: baseline;
    background: transparent;
 }
-
+.for-semantics-checker{
+   visibility: hidden;
+}
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
    display: block;
